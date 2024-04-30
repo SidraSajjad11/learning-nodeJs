@@ -1,0 +1,57 @@
+[
+  {
+    "id" : 0 ,
+    "productName" : "Fresh Avacados",
+    "image" : "images/avocado3.png",
+    "from" : "Spain",
+    "nutrients" : "Vitamin B, Vitamin K",
+    "quantity" : "4 Avocado",
+    "price" : "6.50",
+    "organic" : true,
+    "description" : "A ripe Avacado yields to gentle pressure when held in the palm of the hand and squeezed. The fruit is not sweet, but distinctly and subtly flavored, with smooth texture. The Avacado is popula in vegeterian cuisine as a substitute for meats in sandwiches and salads because of its high fat content. Generally, Avacado is served raw, through some cultivars, including the common 'Hass', can be cooked for a short time without becomming bitter. It is used as the base for the mexican dip known as guacanole, as well as a spread on corn tortillas or toast, served with spices."
+  },
+  {
+    "id" : 1 ,
+    "productName" : "Apollo Broccoli",
+    "image" : "images/broccoli.png",
+    "from" : "Spain",
+    "nutrients" : "Vitamin c, Vitamin K",
+    "quantity" : "3 Broccoli",
+    "price" : "5.50",
+    "organic" : true,
+    "description" : "Apollo broccoli is a variety of broccoli known for its distinctive appearance, flavor, and nutritional benefits. Here's a description of Apollo broccoli: Apollo broccoli features a deep emerald green color, with tightly packed florets forming a compact, dome-shaped head.The leaves of Apollo broccoli are dark green and may be somewhat coarse in texture, surrounding the central head. Apollo broccoli has a mild, slightly sweet flavor with subtle earthy undertones. The texture of the florets is crisp and tender, offering a satisfying crunch when cooked al dente. When properly prepared, Apollo broccoli retains its vibrant color and firm texture, making it visually appealing and enjoyable to eat. Apollo broccoli is a versatile vegetable that can be enjoyed in a variety of dishes, both raw and cooked. It can be steamed, boiled, roasted, stir-fried, or grilled to enhance its flavor and texture. Apollo broccoli is commonly used in salads, soups, stir-fries, pasta dishes, casseroles, and vegetable medleys. It pairs well with a wide range of ingredients, including garlic, lemon, olive oil, cheese, nuts, and herbs, allowing for endless culinary possibilities. Apollo broccoli is typically grown in temperate climates with cool temperatures and ample sunlight. Apollo broccoli is a relatively fast-growing crop, reaching maturity within a few months of planting, depending on growing conditions and cultivation practices."
+  },
+  {
+    "id" : 2 ,
+    "productName" : "Baby Carrots",
+    "image" : "images/carrot.png",
+    "from" : "France",
+    "nutrients" : "Vitamin A, Vitamin K",
+    "quantity" : "20 Carrots",
+    "price" : "3.00",
+    "organic" : true,
+    "description" : "Baby carrots are small, young carrots that are harvested before they reach full maturity. They are typically slender, smooth, and shorter in length compared to mature carrots. Here's a description of baby carrots: Baby carrots have a tender texture and crisp bite, making them ideal for snacking. They are low in calories and fat, making them a healthy snack option. Baby carrots also contain dietary fiber, which is important for digestive health and may help promote satiety.Baby carrots are often eaten raw as a snack or added to salads and vegetable platters for their crunchy texture and sweet flavor."
+  },
+  {
+    "id" : 3 ,
+    "productName" : "Goat and Sheep Cheese",
+    "image" : "images/cheese.png",
+    "from" : "Portugal",
+    "nutrients" : "Vitamin A, Calcium",
+    "quantity" : "250g",
+    "price" : "5.00",
+    "organic" : false,
+    "description" : "Goat and sheep cheese are both types of cheese made from the milk of their respective animals—goats and sheep. Each type of cheese has its own unique characteristics in terms of flavor, texture, and nutritional profile.Goat cheese, also known as chèvre, typically has a distinct tart and tangy flavor with a slightly earthy undertone.The texture of goat cheese can vary from soft and creamy to firm and crumbly, depending on the age and processing method.Sheep cheese, also known as ewe's cheese, varies in flavor depending on factors such as the breed of sheep, the region where it's produced, and the aging process.Sheep cheese is commonly enjoyed on its own or paired with fruits, nuts, and cured meats.Sheep cheese is often featured in traditional dishes from regions where sheep farming is prominent, such as Spain, Greece, and Italy.It is also used in the production of other cheeses, such as feta and Roquefort, where it adds distinctive flavor and texture.It pairs well with fruits, nuts, and honey, making it a popular choice for salads, appetizers, and desserts.Goat cheese can be spread on crackers or bread, crumbled over salads, melted into sauces, or used to stuff pastries and meats.It is also commonly used in Mediterranean and Middle Eastern cuisines, where it adds a unique flavor and creamy texture to dishes.Goat cheese is a versatile ingredient that can be used in both savory and sweet dishes."
+  },
+  {
+    "id" : 4 ,
+    "productName" : "Sweet Corncobs",
+    "image": "🌽",
+    "from" : "Germany",
+    "nutrients" : "Vitamin C, Magnesium",
+    "quantity" : "2 CornCobs",
+    "price" : "2.00",
+    "organic" : false,
+    "description" : " sweet corncobs are a beloved summer vegetable prized for their sweet flavor, tender texture, and versatility in the kitchen. Whether enjoyed fresh off the cob, cooked in recipes, or incorporated into a variety of dishes, sweet corn adds a touch of sweetness and wholesome goodness to meals year-round."
+  }
+]

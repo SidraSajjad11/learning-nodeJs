@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Megrim&family=Nunito+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  <title>Node Farm</title>
+  <style>
+    *,*::before,*::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+      font-size: 62.50;
+      box-sizing: border-box;
+    }
+    body{
+      padding: 5rem 5rem 10rem;
+      line-height: 1.7;
+      font-family: 'Nunito Sans', sans-serif;
+      color: #555;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #9be15d, #00e3be);
+    }
+    h1{
+      font-family: 'Megrin', sans-serif;
+      font-size: 6rem;
+      color: white;
+      transform: skewY(-5deg);
+      text-align: center;
+      position: relative;
+      word-spacing: 3px;
+    }
+    h1::before{
+      content: '';
+      display: block;
+      height: 65%;
+      width: 49%;
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      background: linear-gradient(to bottom, #9be15d, #00e3be);
+      opacity: 0.8;
+      z-index: -1;
+      transform: skewY(370deg) translate(-50%, -50%);
+    }
+    .container{
+      width: 95rem;
+      margin: 0 auto;
+    }
+    .cards-container{
+      margin: 8rem;
+    }
+    .card{
+      background: #fff;
+      box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
+      margin-bottom: 3rem;
+      transform: skewX(-20deg);
+      display: flex;
+      transition: all 0.5s;
+    }
+    .card_emoji{
+      font-size: 5.5rem;
+      line-height: 1.2;
+      padding: 1.5rem 6rem 0.5rem 1.5rem;
+      letter-spacing: -4rem;
+      transform: skewX(20deg);
+    }
+    .card_title-box{
+      background: linear-gradient(to bottom, #9be15d, #00e3be);
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      padding: 0 3rem;
+    }
+    .card_title{
+      font-family: 'Megrim', sans-serif;
+      color: #fff;
+      font-size: 3.25rem;
+      transform: skewX(20deg);
+    }
+    .card_details{
+      display: flex;
+    }
+    .card_detail-box{
+      align-self: stretch;
+      border-right: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+    }
+    .card_detail-box:last-child{
+      border: none;
+    }
+    .card_detail{
+      font-weight: 400;
+      font-size: 1.8rem;
+      transform: skewX(20deg);
+      padding: 1.75rem;
+    }
+    .card_detail--organic{
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 1.9rem;
+      background-image: linear-gradient(to right, #9be15d, #00e3ae);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .card_detail--price{
+      font-weight: 900;
+      font-size: 1.9rem;
+    }
+    .card_link:link,
+    .card_link:visited{
+      flex: 0 0 auto;
+      background: #79e17b;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 2.5rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    .card_link:hover,
+    .card_link:active{
+      background: #9be15d;
+    }
+    .card_link span{
+      transform: scaleX(20deg);
+    }
+    .card:hover{
+      transform: skewX(-20deg) scale(1.08);
+    }
+    .emoji-left{
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+    .emoji-right{
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+    .not-organic{
+      display: none;
+    }
+    h1 img{
+      height: 60px;
+    }
+    .card_emoji img{
+      height: 40px;
+    }
+    .card_detail img{
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> Node Farm </h1>
+    <div class="cards_container">
+      {%PRODUCT_CARD%}
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/2a4d2c2e65.js" crossorigin="anonymous"></script>
+</body>
+</html>
