@@ -28,7 +28,7 @@
       font-family: 'Megrin', sans-serif;
       font-size: 6rem;
       color: white;
-      transform: skewY(-5deg);
+      transform: skewX(-5deg);
       text-align: center;
       position: relative;
       word-spacing: 3px;
@@ -37,14 +37,14 @@
       content: '';
       display: block;
       height: 65%;
-      width: 60%;
+      width: 49%;
       position: absolute;
-      top: 50%;
+      top: 120%;
       left: 50%;
       background: linear-gradient(to bottom, #9be15d, #00e3be);
       opacity: 0.8;
       z-index: -1;
-      transform: skewX(370deg) translate(-50%, -50%);
+      transform: skewY(370deg) translate(-50%, -50%);
     }
     h2 img{
       height: 40px;
@@ -235,9 +235,9 @@
 </head>
 <body>
   <div class="container">
-    <h1> Node Farm  </h1>
+    <h1> 🌽  Node Farm 🥦  </h1>
     <figure class="product">
-      <div class="product_organic {%NOT_ORGANIC%}"><h5>{%ORGANIC%}</h5></div>
+      <div class="product_organic {%NOT_ORGANIC%}"><h5>Organic!</h5></div>
       <a href="/overview" class="product_back">
         <span class="emoji-left">⬅</span> Back
       </a>
@@ -256,7 +256,7 @@
       <div class="product_details">
         <p><sapn class="emoji-left">🌍</sapn>From {%FROM%}</p>
         <p><sapn class="emoji-left">💝 </sapn>{%NUTRIENTS%}</p>
-        <p><sapn class="emoji-left">🗃</sapn>{%QUANTITY%} </p>
+        <p><sapn class="emoji-left">🗃 </sapn>{%QUANTITY%} </p>
         <p><sapn class="emoji-left">💰</sapn>Rs. {%PRICE%}</p>
       </div>
       <a href="#" class="product_link">
