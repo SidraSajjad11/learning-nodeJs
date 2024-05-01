@@ -1,6 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
+const slugify = require('slugify');
 const replaceTemplate = require('./Module/replaceTemplate.js');
 
 const tempOverview = fs.readFileSync(`${__dirname}/nodeFarm/overview.html`, 'utf-8'); 
@@ -8,7 +9,8 @@ const tempCard = fs.readFileSync(`${__dirname}/nodeFarm/card.html`, 'utf-8');
 const tempProduct = fs.readFileSync(`${__dirname}/nodeFarm/product.html`, 'utf-8');  
 const data = fs.readFileSync(`${__dirname}/devData/data.json`, 'utf-8'); 
 const productData = JSON.parse(data);
-
+const slugs = productData.map(el => slugify(el.productName, { lower: true }));
+console.log(slugs);
 const server = http.createServer((req, res) => {
     const { pathname, query } = url.parse(req.url, true);
 
@@ -18,7 +20,6 @@ const server = http.createServer((req, res) => {
         const cardsHtml = productData.map(el => replaceTemplate(tempCard, el)).join('');
         const output =  tempOverview.replace('{%PRODUCT_CARD%}', cardsHtml);
         res.end(output);
-      
     // PRODUCT PAGE
     } else if (pathname === '/product') {
         res.writeHead(200, {'Content-type' : 'text/html'});
